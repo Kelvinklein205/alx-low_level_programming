@@ -7,9 +7,7 @@
  */
 int _abs(int k)
 {
-	if (k < -1)
-	{
-		_putchar(k);
-	}
-	return (0);
+	if (k < 0)
+	k = -k;
+	return (k);
 }
