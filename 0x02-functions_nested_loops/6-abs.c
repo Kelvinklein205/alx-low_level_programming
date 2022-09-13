@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ * _abs - function that prints absolute value of an integer
+ * @k: k is an integer
+ * Return: return 0
+ */
+int _abs(int k)
+{
+	if (k < -1)
+	{
+		_putchar(k);
+	}
+	return (0);
+}
