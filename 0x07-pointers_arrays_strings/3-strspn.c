@@ -20,8 +20,9 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				e++;
 			}
-			k++;
+			c++;
 		}
 		k++;
 	}
+	return ('\0');
 }
