@@ -20,11 +20,11 @@ char *_strstr(char *haystack, char *needle)
 		}
 		c++;
 		}
-	if (needle[b] == '\0')
-	{
-		return (haystack + b);
-	}
-	b++;
+		if (needle[c] == '\0')
+		{
+			return (haystack + b);
+		}
+		b++;
 	}
 	return ('\0');
 }
