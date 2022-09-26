@@ -24,5 +24,5 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		k++;
 	}
-	return ('\0');
+	return (e);
 }
