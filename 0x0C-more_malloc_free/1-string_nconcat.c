@@ -31,10 +31,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	d = malloc(sizeof(char) * (a + b + 1));
 	if (d == NULL)
 		return (NULL);
-	for (c = 0; c < 1; c++)
+	for (c = 0; c < a; c++)
 		d[c] = s1[c];
 	for (c = 0; c < b; c++)
-		d[c + 1] = s2[c];
+		d[c + a] = s2[c];
 	d[a + b] = '\0';
 
 	return (d);
