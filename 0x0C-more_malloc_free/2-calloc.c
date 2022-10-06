@@ -10,7 +10,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	int *p = malloc(nmemb * size);
 	unsigned int n;
 
-	if (nmemb == 0 && size == 0)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 	if (p == NULL)
 		return (NULL);
