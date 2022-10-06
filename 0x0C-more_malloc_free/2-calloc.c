@@ -9,11 +9,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *p = malloc(size);
 
-	if (nmemb >= 0 && size >= 0)
-	{
+	if (nmemb == 0 && size == 0)
 		return (NULL);
-	}
 	if (p == NULL)
-		exit(EXIT_FAILURE);
-	return (p);
+		return (NULL);	
 }
